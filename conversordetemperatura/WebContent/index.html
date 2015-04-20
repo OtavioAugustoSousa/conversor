@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"
+	media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+
+
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper #1976d2 blue darken-2">
+				<a href="#!" class="brand-logo">Conversor de Temperatura</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="sass.html">Home</a></li>
+					<li><a href="#conversor">Conversor</a></li>
+					<li><a href="#iaas">IaaS</a></li>
+					<li><a href="#paas">PaaS</a></li>
+					<li><a href="#saas">SaaS</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container " id="iaas">
+		<div class="row #eeeeee grey lighten-3 section ">
+			<h5 class="center-align">IaaS - Infrastructure as a Service</h5>
+			<div class="col s3 offset-s2 ">
+				<div class="card-panel center-align">
+					<a
+						href="https://www.dreamspark.com/Product/Product.aspx?productid=8"><img
+						class="responsive-img" alt="windowsServer" src="img/logo-ws.png"
+						style="height: 80px"></a>
+				</div>
+			</div>
+			<div class="col s3">
+				<div class="card-panel center-align">
+					<a href="https://azure.microsoft.com/pt-br/"> <img
+						class="responsive-img" alt="azure" src="img/azure-ill.png"
+						style="height: 80px"></a>
+				</div>
+			</div>
+			<div class="col s3">
+				<div class="card-panel center-align">
+					<a href="https://tomcat.apache.org/download-70.cgi"> <img
+						class="responsive-img" alt="tomcat" src="img/tomcat.png"
+						style="height: 60px"> <span> Tomcat 7</span></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container " id="paas">
+		<div class="row #eeeeee grey lighten-3 section " id="pass">
+			<h5 class="center-align">PaaS – Platform as a Service</h5>
+			<div class="col s3 offset-s2 ">
+				<div class="card-panel center-align">
+					<a href="https://eclipse.org/"> <img class="responsive-img"
+						alt="windowsServer" src="img/eclipse.png" style="height: 80px"></a>
+				</div>
+			</div>
+			<div class="col s3">
+				<div class="card-panel center-align">
+					<a
+						href="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html">
+						<img class="responsive-img" alt="windowsServer"
+						src="img/java8.png" style="height: 80px">
+					</a>
+				</div>
+			</div>
+			<div class="col s3">
+				<div class="card-panel center-align">
+					<a href="https://jersey.java.net/"> <img class="responsive-img"
+						alt="windowsServer" src="img/jersey-logo.png" style="height: 80px"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container " id="saas">
+		<div class="row #eeeeee grey lighten-3 section " id="pass">
+			<h5 class="center-align">SaaS – Software as a Service</h5>
+			<div class="card-panel ">
+
+				<h5 class="center-align">API</h5>
+				<table class="bordered container">
+					<thead>
+						<tr>
+							<th data-field="uri">URI-http://conversor.cloudapp.net/</th>
+							<th data-field="paramaetros">Parâmetros</th>
+							<th data-field="retorno">Retorno</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>/rest/kelvintocelsius/{grau}</td>
+							<td>float</td>
+							<td>Json</td>
+						</tr>
+						<tr>
+							<td>/rest/kelvintofahrenheit/{grau}</td>
+							<td>float</td>
+							<td>Json</td>
+						</tr>
+						<tr>
+							<td>/rest/fahrenheittokelvin/{grau}</td>
+							<td>float</td>
+							<td>Json</td>
+						</tr>
+						<tr>
+							<td>/rest/fahrenheittocelsius/{grau}</td>
+							<td>float</td>
+							<td>Json</td>
+						</tr>
+						<tr>
+							<td>/rest/celsiustofahrenheit/{grau}</td>
+							<td>float</td>
+							<td>Json</td>
+						</tr>
+						<tr>
+							<td>/rest/celsiustokelvin/{grau}</td>
+							<td>float</td>
+							<td>Json</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="valign-wrapper"></div>
+				<img class="responsive-img" alt="logo"
+					style="height: 80px; display: inline-block" src="img/logo.png">
+				<h4 style="display: inline-block;" class="valign">Conversor de
+					Temperatura</h4>
+
+				<div class="divider "></div>
+				<div class="row" id="conversor">
+					<div class="col s4">
+						<form>
+							<h3>Conversor</h3>
+
+							<label>DE:</label><select class="browser-default" name="de">
+								<option value="celsius">Celsius</option>
+								<option value="fahrenheit">Fahrenheit</option>
+								<option value="kelvin">Kelvin</option>
+							</select> <label>PARA:</label><select class="browser-default" name="para">
+								<option value="celsius">Celsius</option>
+								<option value="fahrenheit">Fahrenheit</option>
+								<option value="kelvin">Kelvin</option>
+							</select> <br /> <br />
+
+							<div class="col s6">
+								<label for="grau">VALOR:</label> <input type="number" id="grau"
+									name="grau" min="-100" max="100" />
+							</div>
+						</form>
+						<a class="waves-effect waves-light btn #1976d2 blue darken-2"
+							onclick="calcularTem()">Calcular Temperatura</a>
+
+					</div>
+					<div class="termometro">
+						<div id="corpoC" class="corpo"></div>
+						<div id="bolinha"></div>
+						<div id="tagC" class="tag">0°C</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="error" class="modal">
+			<div class="modal-content">
+				<h4>Erro</h4>
+				<p>Valores Inválidos!</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!"
+					class=" modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+			</div>
+		</div>
+
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/script.js"></script>
+</body>
+</html>
