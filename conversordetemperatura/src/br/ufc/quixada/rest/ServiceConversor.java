@@ -6,6 +6,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import br.ufc.quixada.model.Calculadora;
 import br.ufc.quixada.model.Conversor;
 import br.ufc.quixada.model.Grau;
 
