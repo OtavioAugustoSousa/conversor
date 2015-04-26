@@ -43,8 +43,8 @@
 }
 
 #tagC {
-	left: 30px;
-	width: 50px;
+	left: 25px;
+	width: 70px;
 	height: 30px;
 	top: -132px;
 	position:relative;
@@ -114,6 +114,7 @@
 	width: 100px;
 	
 }
+
 /* 
 .tag:hover:after {
     border-color: transparent transparent transparent #739fe4;

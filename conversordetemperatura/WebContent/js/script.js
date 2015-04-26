@@ -34,9 +34,14 @@ function changeTemper(temp) {
 	"background" : background
     });
 
-    var newPosition = ((tamanho / 2 / 1000) * temp) + tagPosition;
-
+    var newPosition = ((-1)*(tamanho / 2 / 200) * temp) + tagPosition;
+   
+    if(newPosition >273){
+	newPosition =273;
+    }else if(newPosition < -273){
+	newPosition = (-273);
+    }
     $("#tagC").css({
-	"top" : ((-1) * newPosition) + "px"
+	"top" : (newPosition) + "px"
     });
 }
